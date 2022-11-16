@@ -41,6 +41,8 @@ services/
 
 Although you can only access instance metadata and user data from within the instance itself, the data is not protected by authentication or cryptographic methods. Anyone who has direct access to the instance, and potentially any software running on the instance, can view its metadata. Therefore, you should not store sensitive data, such as passwords or long-lived encryption keys, as user data.
 
+###Example:
+
 ```
 $ curl http://169.254.169.254/latest/meta-data/security-groups
 
